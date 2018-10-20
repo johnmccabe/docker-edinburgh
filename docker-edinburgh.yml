@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  docker-edinburgh:
+    lang: go
+    handler: ./docker-edinburgh
+    image: johnmccabe/docker-edinburgh
